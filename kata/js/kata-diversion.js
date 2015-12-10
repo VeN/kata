@@ -19,29 +19,3 @@
 //
 // Hint: Conversion integer to binary - i.toString(2)
 
-var oneFlag = false;
-var skipNumber = false;
-
-for (var i = 0; i < 30; i++) {
-    var bin = i.toString(2);
-    var str = new String(bin);
-
-    for (var j = 0; j < str.length; j++) {
-        if (str[j] == 1) {
-            if (oneFlag) {
-                oneFlag = false;
-                skipNumber = true;
-                break;
-            }
-            oneFlag = true;
-        } else {
-            oneFlag = false;
-        }
-    }
-
-    if (!skipNumber) {
-        console.log(i + ' - ' + bin);
-    }
-
-    oneFlag = skipNumber = false;
-}

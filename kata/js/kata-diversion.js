@@ -17,5 +17,5 @@
 // What is the number for sequences of length 4, 5, 10, n?
 // Print all such numbers for interval <0; 100>, <m; n>
 //
-// Hint: Conversion integer to binary - i.toString(2)
+// Hint: Conversion of integer to binary form: i.toString(2)
 
